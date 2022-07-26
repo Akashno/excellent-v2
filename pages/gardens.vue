@@ -12,8 +12,7 @@ export default {
     return {
       details: {
         heading: "LandScape & Gardening",
-        subHeading:
-          " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore incidunt dicta et quod a amet illum doloribus, nulla sequi dolores facilis corrupti deserunt! Suscipit deserunt mollitia amet recu ",
+        subHeading: " A garden is never finished—it is a creation that evolves from season-to-season and year-to-year. EXCELLENT gardeners are well aware of this reality and will help you to enjoy the ephemeral nature of your landscapes.  ",
         link: "/",
       },
       bgImages: ["gardensBg.jpg", "gardensBgTwo.jpg", "gardensBgThree.jpg"],

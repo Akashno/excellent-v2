@@ -18,7 +18,7 @@ export default {
       details: {
         heading: "Paving Floors made for Indian Culture",
         subHeading:
-          " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore incidunt dicta et quod a amet illum doloribus, nulla sequi dolores facilis corrupti deserunt! Suscipit deserunt mollitia amet recu ",
+          " Striking, durable and environment friendly, Excellent pavers have emerged as a choice of aesthetic and practical element for landscapes , parking lots, drive ways and patios ",
         link: "/",
       },
       bgImages: [

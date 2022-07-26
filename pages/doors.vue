@@ -17,8 +17,7 @@ export default {
     return {
       details: {
         heading: "Hand crafted wooden doors",
-        subHeading:
-          " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore incidunt dicta et quod a amet illum doloribus, nulla sequi dolores facilis corrupti deserunt! Suscipit deserunt mollitia amet recu ",
+        subHeading: " Our commercial and residential interior and exterior doors are tailored to your design and lifestyle and are made to optimize your space. At excellent , we display doors that range in size, operation, and style ",
         link: "/",
       },
       bgImages: ["doorBg.jpg", "doorBgTwo.jpg", "doorBgThree.jpg"],

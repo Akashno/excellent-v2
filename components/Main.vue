@@ -2,7 +2,7 @@
   <div>
     <div
       class="backgroundImage min-h-screen mx-auto grid md:grid-cols-12 grid-cols-1"
-      :style="`background-image: url('${bgImage}'); background-color: #cccccc;background-repeat;no-repeat;background-size:cover;`"
+      :style="`background-image: url('${bgImage}');background-repeat;no-repeat;background-size:cover;`"
     >
       <div
         class="col-span-5 bg-primary text-white text-5xl flex justify-center items-center pt-36 md:pl-10 cover"
@@ -36,6 +36,7 @@
         <img class="w-72 h-72" :src="image" :alt="index" />
       </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -70,14 +71,15 @@ export default {
     gsap.to(".box", { opacity: 1, duration: 1, x: "0px" });
   },
   methods: {
-    setImage(i) {
-      this.bgImage = this.bgImages[i];
-    },
     onExplore() {
       this.$refs.images.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
+    },
+
+    setImage(i) {
+      this.bgImage = this.bgImages[i];
     },
   },
   created() {
@@ -96,16 +98,18 @@ export default {
         });
       });
     //
-    let i = 0;
-    this.setImage(0);
-    setInterval(() => {
-      if (i <= 2) {
-        this.setImage(i);
-        i++;
-      } else {
-        i = 0;
+    this.setImage(0)
+    let i = 1
+    setInterval(()=>{
+      if(i<=2){
+        this.setImage(i)
+        i++
+      } else{
+        this.setImage(0)
+        i = 0
       }
-    }, 3000);
+    },3000)
+
   },
 };
 </script>
