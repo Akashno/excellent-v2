@@ -21,11 +21,7 @@ export default {
           " Striking, durable and environment friendly, Excellent pavers have emerged as a choice of aesthetic and practical element for landscapes , parking lots, drive ways and patios ",
         link: "/",
       },
-      bgImages: [
-        "interlockBg.jpg",
-        "interlockBgTwo.jpg",
-        "interlockBgThree.jpg",
-      ],
+      bgImages: [ "interlockBg.jpg", "interlockBgTwo.jpg", "interlockBgThree.jpg", ],
       productImages: [],
     };
   },
