@@ -2,8 +2,11 @@
   <div>
     <div
       class="backgroundImage min-h-screen mx-auto grid md:grid-cols-12 grid-cols-1"
-      :style="`background-image: url('${bgImage}');background-repeat;no-repeat;background-size:cover;`"
+      :style="`background-image: url('assets/${bgImage}');background-repeat;no-repeat;background-size:cover;`"
+
+
     >
+    <img v-show="false" :src="`assets/${tempBgImage}`">
       <div
         class="col-span-5 bg-primary text-white text-5xl flex justify-center items-center pt-36 md:pl-10 cover"
         style="background-color: rgba(68, 68, 66, 0.75)"
@@ -45,6 +48,7 @@ import gsap from "gsap";
 export default {
   data() {
     return {
+      tempBgImage:null,
       bgImage: null,
       productImages: [],
     };
@@ -83,6 +87,15 @@ export default {
     },
   },
   created() {
+    this.tempBgImage = this.bgImages[0]
+    setTimeout(()=>{
+    this.tempBgImage = this.bgImages[1]
+    },10)
+
+    setTimeout(()=>{
+    this.tempBgImage = this.bgImages[2]
+    },10)
+
     const setProducts = (url) => {
       this.productImages.push(url);
     };
