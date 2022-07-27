@@ -1,5 +1,14 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  env:{
+          apiKey: process.env.apiKey,
+          authDomain: process.env.authDomain,
+          projectId:process.env.projectId,
+          storageBucket:process.env.storageBucket,
+          messagingSenderId:process.env.messagingSenderId,
+          appId:process.env.appId,
+          measurementId:process.env.measurementId,
+  },
   target:'static',
   head: {
     title: "excellent",
