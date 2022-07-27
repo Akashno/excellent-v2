@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div 
+    >
     <div
       class="backgroundImage min-h-screen mx-auto grid md:grid-cols-12 grid-cols-1"
-      :style="`background-image: url('../assets/${bgImage}');background-repeat;no-repeat;background-size:cover;`"
+      :style="`background-image: url('${bgImage}');background-repeat;no-repeat;background-size:cover;`"
 
 
     >
-    <img v-show="false" :src="`../assets/${tempBgImage}`">
       <div
         class="col-span-5 bg-primary text-white text-5xl flex justify-center items-center pt-36 md:pl-10 cover"
         style="background-color: rgba(68, 68, 66, 0.75)"
@@ -28,6 +28,9 @@
             Coming Soon
           </button>
         </div>
+      </div>
+      <div :style="`background-image: url('${tempBgImage}')`" class="w-0 h-0">
+
       </div>
     </div>
     <div
@@ -90,11 +93,11 @@ export default {
     this.tempBgImage = this.bgImages[0]
     setTimeout(()=>{
     this.tempBgImage = this.bgImages[1]
-    },10)
+    },20)
 
     setTimeout(()=>{
     this.tempBgImage = this.bgImages[2]
-    },10)
+    },30)
 
     const setProducts = (url) => {
       this.productImages.push(url);
