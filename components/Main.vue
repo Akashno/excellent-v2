@@ -2,11 +2,11 @@
   <div>
     <div
       class="backgroundImage min-h-screen mx-auto grid md:grid-cols-12 grid-cols-1"
-      :style="`background-image: url('assets/${bgImage}');background-repeat;no-repeat;background-size:cover;`"
+      :style="`background-image: url('static/${bgImage}');background-repeat;no-repeat;background-size:cover;`"
 
 
     >
-    <img v-show="false" :src="`assets/${tempBgImage}`">
+    <img v-show="false" :src="`static/${tempBgImage}`">
       <div
         class="col-span-5 bg-primary text-white text-5xl flex justify-center items-center pt-36 md:pl-10 cover"
         style="background-color: rgba(68, 68, 66, 0.75)"
