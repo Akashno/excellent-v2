@@ -1,6 +1,7 @@
 <template>
   <div class="relative">
     <NavBar class="absolute w-screen z-20" />
+    <EventDialog/>
     <Main
       :bgImages="bgImages"
       :details="details"
@@ -11,8 +12,13 @@
 </template>
 
 <script>
+import EventDialog from '../components/EventDialog.vue'
 export default {
   name: "index",
+  components:{
+    EventDialog
+
+  },
   data() {
     return {
       details: {
